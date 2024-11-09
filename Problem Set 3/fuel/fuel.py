@@ -16,4 +16,4 @@ if p == 100:
 elif p <= 1:
     print("E")
 else:
-    print(f"{p}%")
+    print(f"{int(p)}%")
