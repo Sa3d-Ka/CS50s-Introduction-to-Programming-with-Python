@@ -13,7 +13,7 @@ menu = {
 S = 0
 while True:
     try:
-        items = input("Item: ").title()  # Convert input to title case to match menu keys
+        items = input("Item: ").title()
         if items in menu:
             S += menu[items]
             print(f"${S:.2f}")
