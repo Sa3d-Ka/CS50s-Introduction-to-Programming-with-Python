@@ -18,5 +18,5 @@ while True:
             S += menu[items]
             print(f"${S:.2f}")
     except EOFError:
-        print("\nExiting...")
+        pass
         break

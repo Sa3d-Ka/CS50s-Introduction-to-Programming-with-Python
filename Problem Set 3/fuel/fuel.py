@@ -10,10 +10,10 @@ while True:
     except (ValueError, ZeroDivisionError):
         pass
         
-p = f*100
+p = round(f*100)
 if p == 100:
     print("F")
 elif p <= 1:
     print("E")
 else:
-    print(f"{int(p)}%")
+    print(f"{p}%")
