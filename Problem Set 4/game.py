@@ -5,6 +5,9 @@ while True:
         level = int(input("Level: "))
         if level > 1:
             break
+        elif level == 1:
+            level += 1
+            break
     except ValueError:
         pass
 
