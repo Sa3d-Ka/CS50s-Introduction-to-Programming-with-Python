@@ -11,7 +11,7 @@ while True:
         pass
         
 p = round(f*100)
-if p == 100:
+if p == 99:
     print("F")
 elif p <= 1:
     print("E")
