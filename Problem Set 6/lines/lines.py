@@ -1,5 +1,4 @@
 import sys
-import os
 
 if len(sys.argv) > 2:
     print("Too many command-line arguments")
@@ -16,7 +15,7 @@ else:
             reader = file.readlines()
             i = 0
             for line in reader:
-                if not "#" in line or not '\n' in :
+                if not "#" in line and not line.isspace():
                      i += 1
             print(i)
     except FileNotFoundError:
