@@ -2,13 +2,11 @@ from numb3rs import validate
 
 
 def test_validate():
-    # Valid IPv4 addresses
     assert validate("127.0.0.1") == True
     assert validate("255.255.255.255") == True
     assert validate("0.0.0.0") == True
     assert validate("192.168.1.1") == True
 
-    # Invalid IPv4 addresses
     assert validate("512.512.512.512") == False  # Invalid octet (512 > 255)
     assert validate("1.2.3.1000") == False       # Invalid octet (1000 > 255)
     assert validate("256.255.255.255") == False  # Invalid first octet
