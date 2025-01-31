@@ -6,7 +6,7 @@ def main():
 
 
 def count(s):
-    pattern = r"[^.]um[^\w]"
+    pattern = r"\bum\b"
     x = re.findall(pattern, s, flags=re.IGNORECASE)
     return len(x)
 
