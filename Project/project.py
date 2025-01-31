@@ -109,9 +109,8 @@ def DisplayBooks():
             data = table[1:]
 
             print(tabulate(data, headers, tablefmt="grid"))
-        print("Books loaded successfully.")
     except FileNotFoundError:
-        print("No data file found. Starting with an empty catalog.")
+        print("No data file found.")
 
 def ExportToCSV():
     with open('Project/books.csv', 'w', newline='', encoding='utf-8') as file:
